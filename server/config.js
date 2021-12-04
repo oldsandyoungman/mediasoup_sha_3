@@ -23,8 +23,8 @@ module.exports =
 		// NOTE: Set your own valid certificate files.
 		tls        :
 		{
-			cert : process.env.HTTPS_CERT_FULLCHAIN || `${__dirname}/certs/rustling.xyz/Apache/2_rustling.crt`,
-			key  : process.env.HTTPS_CERT_PRIVKEY || `${__dirname}/certs/rustling.xyz/Apache/2_rustling.key`
+			cert : process.env.HTTPS_CERT_FULLCHAIN || `${__dirname}/certs/rustling.xyz/Apache/2_rustling.xyz.crt`,
+			key  : process.env.HTTPS_CERT_PRIVKEY || `${__dirname}/certs/rustling.xyz/Apache/3_rustling.xyz.key`
 		}
 	},
 	// mediasoup settings.
