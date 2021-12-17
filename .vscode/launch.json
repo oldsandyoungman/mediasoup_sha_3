@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        // {
+        //     "type": "node",
+        //     "request": "launch",
+        //     "name": "Launch Program",
+        //     "skipFiles": [
+        //         "<node_internals>/**"
+        //     ],
+        //     "program": "${workspaceFolder}/server/server.js"
+        // },
+        {
+            "type": "node", // node 调试
+            "request": "attach", // launch / attach。luanch 为本地调试，attach 为远程/跨进程调试
+            "name": "Remote server", // 启动配置的名称，在面板中可以选择
+            "address": "81.69.221.65", // 服务器地址
+            "port": 9229, // 服务器端口，默认为 9229
+            "localRoot": "${workspaceFolder}/server", // 本地程序所在的目录
+            "remoteRoot": "/home/ubuntu/Mediasoup_sha/mediasoup_sha_3/server", // 服务器对应程序所在的目录
+            "program": "${workspaceFolder}/server/server.js",
+            "runtimeExecutable": "/usr/local/bin/node" // 就增加这行
+          }
+      
+    ]
+}
